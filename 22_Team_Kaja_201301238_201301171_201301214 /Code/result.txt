@@ -1,0 +1,1519 @@
+Details After Extracting Tweets
+Total Tweets =  1000000
+Correctly Extracted =  963882
+Wrong Extracted =  36118
+
+Details After Extracting Features
+Total Tweets =  963882
+Correctly Extracted =  963881
+Wrong Extracted =  1
+
+start =  1439399166
+end   =  1439552713
+
+1439399166   1439402766
+dragmedown  192
+sharethelove  66
+archesfreemerch  51
+topnewfollowers  42
+mtvhottest  32
+getaraise  22
+directioners  18
+wibto200k  14
+retweet  13
+travelchatsa  8
+
+
+1439402767   1439406367
+
+
+1439406368   1439409968
+
+
+1439409969   1439413569
+
+
+1439413570   1439417170
+
+
+1439417171   1439420771
+
+
+1439420772   1439424372
+
+
+1439424373   1439427973
+
+
+1439427974   1439431574
+dragmedown  29
+camerongab  25
+gamersguide  25
+camforwebstar  16
+nectarchat  9
+getsomezzzquil  9
+mtvhottest  8
+happyaldubday  8
+directionersfuneral  8
+peonychat  6
+
+
+1439431575   1439435175
+dragmedown  93
+camforwebstar  90
+happyaldubday  38
+otwolpusongofw  26
+soundsgoodfeelsgood  25
+mtvhottest  25
+uniteblue  20
+donnielovesjenny  16
+psytulay  16
+directionersfuneral  16
+
+
+1439435176   1439438776
+dolangirlsarebeautiful  152
+anthonychat  149
+btswiththatsheart  104
+matchifythecelebs  94
+happyaldubday  76
+dolanfandomisbeautiful  64
+otwolpusongofw  49
+mtvhottest  44
+directionersfuneral  35
+camforwebstar  24
+
+
+1439438777   1439442377
+happyaldubday  195
+dolangirlsarebeautiful  185
+matchifythecelebs  175
+btswiththatsheart  124
+mtvhottest  89
+otwolpusongofw  59
+retweet  43
+directionersfuneral  43
+dolanfandomisbeautiful  42
+topnewfollowers  42
+
+
+1439442378   1439445978
+happyaldubday  168
+digitalcm  98
+freedomtasteslike  69
+jangharyojana  68
+mtvhottest  62
+contest  55
+directionersfuneral  50
+retweet  44
+otwolpusongofw  41
+dragmedown  34
+
+
+1439445979   1439449579
+camforwebstar  193
+jangharyojana  186
+happyaldubday  138
+dragmedown  107
+contest  59
+roomno1947  53
+digitalcm  45
+directionersfuneral  44
+change4good  42
+freedomtasteslike  42
+
+
+1439449580   1439453180
+dragmedown  162
+colorshowmood  129
+jangharyojana  107
+alevelresults  91
+mtvhottest  89
+happyaldubday  77
+roomno1947  71
+change4good  49
+contest  48
+topnewfollowers  44
+
+
+1439453181   1439456781
+flyawaywithsmallzy  242
+alevelresults  103
+jangharyojana  89
+happyaldubday  78
+contest  71
+change4good  63
+mtvhottest  59
+directionersfuneral  51
+topnewfollowers  45
+otwolpusongofw  44
+
+
+1439456782   1439460382
+mtvhottest  3100
+dragmedown  150
+jangharyojana  95
+happyaldubday  72
+jimin  61
+psytulay  61
+alevelresults  58
+flyaway  56
+indianandproud  45
+retweet  44
+
+
+1439460383   1439463983
+jimin  62
+jangharyojana  23
+99cnewcar  15
+psytulay  14
+alevelresults  10
+contest  10
+bhmeetngreet  9
+uonfreshers  7
+happyaldubday  7
+mtvhottest  7
+
+
+1439463984   1439467584
+otwolpusongofw  7
+job  7
+lefthandersday  6
+jobs  6
+uniteblue  6
+hiring  5
+careerarc  5
+restaurantrevo  4
+mtvhottest  4
+flyaway  3
+
+
+1439467585   1439471185
+otwolpusongofw  71
+psytulay  46
+topnewfollowers  39
+jangharyojana  27
+contest  21
+mtvhottest  20
+happyaldubday  20
+lefthandersday  18
+tbt  16
+myindiamyfreedom  14
+
+
+1439471186   1439474786
+mtvhottest  2974
+dragmedown  357
+otwolpusongofw  229
+psytulay  110
+lefthandersday  91
+jangharyojana  75
+topnewfollowers  73
+sharethelove  54
+tbt  47
+bizhour  45
+
+
+1439474787   1439478387
+mtvhottest  19506
+dragmedown  183
+otwolpusongofw  120
+flyaway  118
+lefthandersday  86
+hidovey  80
+psytulay  64
+soundsgoodfeelsgood  57
+jangharyojana  56
+tbt  55
+
+
+1439478388   1439481988
+mtvhottest  17428
+camforwebstar  188
+quakertime  109
+lefthandersday  107
+otwolpusongofw  62
+teenchoice  56
+camforviner  49
+tbt  49
+uniteblue  44
+retweet  43
+
+
+1439481989   1439485589
+mtvhottest  377
+lefthandersday  95
+jimin  84
+dragmedown  63
+tbt  59
+blackmagicspotifyspree  52
+cfchat  47
+aldubhihintayinkita  46
+retweet  44
+askduranduran  43
+
+
+1439485590   1439489190
+watchshawnaccesslive  1654
+dragmedown  392
+collinsnewvideo  120
+augustisthebestmonth  114
+rewardhealthychoices  106
+mtvhottest  102
+lefthandersday  84
+surprizeshoeparty  60
+tbt  57
+twittersmarter  49
+
+
+1439489191   1439492791
+watchshawnaccesslive  346
+dragmedown  252
+camforwebstar  229
+mtvhottest  149
+jimin  117
+britabacktocollege  93
+culturetrav  85
+choiceyoutuber  81
+lefthandersday  54
+tbt  46
+
+
+1439492792   1439496392
+choiceyoutuber  166
+dragmedown  85
+mtvhottest  66
+happyindependenceday  65
+candiesstyleicon  64
+jimin  64
+watchshawnaccesslive  62
+lefthandersday  57
+proudpakistani  53
+tbt  51
+
+
+1439496393   1439499993
+dragmedown  330
+mtvhottest  91
+watchshawnaccesslive  86
+lefthandersday  61
+choiceyoutuber  58
+ssgiving  55
+jimin  54
+retweet  45
+topnewfollowers  43
+tbt  42
+
+
+1439499994   1439503594
+dragmedown  343
+drfc  77
+mtvhottest  54
+competition  51
+lefthandersday  47
+fantastic  44
+retweeted  44
+fingerscrossed  44
+followed  44
+uniteblue  44
+
+
+1439503595   1439507195
+dragmedown  122
+mtvhottest  99
+hushedcallwithchrisoflyng  99
+topnewfollowers  51
+teartalk  43
+retweet  43
+aldubhihintayinkita  43
+consentculture  42
+lefthandersday  32
+tbt  31
+
+
+1439507196   1439510796
+kamatdigifest  186
+ff  157
+collinskeynewvideo  90
+otwolthemeetup  90
+dragmedown  88
+crawfordto900k  85
+mtvhottest  79
+lashoutloud  79
+sharethelove  64
+topnewfollowers  60
+
+
+1439510797   1439514397
+5sosinto  566
+dragmedown  385
+disneytbt  147
+crawfordto900k  124
+kamatdigifest  106
+realme  104
+mtvhottest  95
+aldubhihintayinkita  80
+soundsgoodfeelsgood  77
+silverhairdontcare  77
+
+
+1439514398   1439517998
+5sosinto  747
+bb17  311
+mtvhottest  211
+realme  115
+zquad  89
+sleepnumbersweeps  84
+aldubhihintayinkita  84
+kidlitart  77
+followfriday  76
+psypanliligaw  72
+
+
+1439517999   1439521599
+5sosinto  406
+askkian  220
+mtvhottest  130
+aldubhihintayinkita  84
+mediachat  76
+dominion  63
+psypanliligaw  61
+otwolthemeetup  53
+retweet  38
+womenkickass  34
+
+
+1439521600   1439525200
+5sosinto  809
+dragmedown  248
+freedomtomarry  140
+askkian  131
+aldubhihintayinkita  116
+annemeetssammilby  111
+psypanliligaw  101
+four  98
+soundsgoodfeelsgood  76
+stay  57
+
+
+1439525201   1439528801
+otwolthemeetup  181
+aldubhihintayinkita  106
+freedomtomarry  101
+dragmedown  80
+annemeetssammilby  69
+mtvhottest  61
+psypanliligaw  61
+soundsgoodfeelsgood  52
+ff  43
+retweet  42
+
+
+1439528802   1439532402
+otwolthemeetup  139
+aldubhihintayinkita  109
+freedomtomarry  97
+simplehai  96
+azadimubarak  56
+mtvhottest  56
+psypanliligaw  52
+ff  43
+freedomsoundslike  39
+iampakistan  37
+
+
+1439532403   1439536003
+followfriday  118
+5sosinto  110
+ff  92
+simplehai  91
+pakbanegamustafavi  85
+aldubhihintayinkita  83
+contest  64
+teenchoice  58
+choicefandom  54
+directioners  52
+
+
+1439536004   1439539604
+followfriday  496
+mtvhottest  117
+pakbanegamustafavi  103
+ff  94
+simplehai  76
+otwolthemeetup  61
+teachtotransform  61
+aldubhihintayinkita  54
+camerondallas  53
+nashgrier  49
+
+
+1439539605   1439543205
+followfriday  224
+ff  189
+otwolthemeetup  109
+whengirlsarefree  84
+camerondallas  69
+nashgrier  67
+psypanliligaw  56
+contest  52
+retweet  43
+aldubhihintayinkita  40
+
+
+1439543206   1439546806
+ff  182
+tgif  174
+followfriday  134
+otwolthemeetup  78
+psypanliligaw  74
+contest  53
+jimin  50
+welcometweet  49
+mtvhottest  48
+indianandproud  48
+
+
+1439546807   1439550407
+followfriday  191
+ff  144
+dragmedown  92
+four  91
+psypanliligaw  84
+99cnewcar  74
+otwolthemeetup  74
+mtvhottest  60
+inherentlyindian  53
+contest  53
+
+
+1439550408   1439554008
+ff  79
+followfriday  77
+psypanliligaw  58
+otwolthemeetup  57
+contest  50
+azadiroutinese  49
+99cnewcar  43
+fridayfeeling  28
+ukbusinesslunch  26
+aldubhihintayinkita  26
+
+
+mtvhottest
+Tweet = mtvhottest
+mini =  1439400500
+maxi =  1439552699
+32
+0
+0
+0
+0
+0
+0
+0
+21
+26
+55
+94
+43
+45
+98
+3111
+32
+0
+7
+44
+21825
+5086
+13282
+94
+131
+126
+54
+95
+62
+95
+74
+222
+133
+74
+63
+60
+43
+48
+94
+25
+67
+47
+9
+0
+
+
+dragmedown
+Tweet = dragmedown
+mini =  1439399176
+maxi =  1439549023
+192
+0
+0
+0
+0
+0
+0
+0
+29
+93
+0
+19
+34
+107
+162
+20
+150
+1
+0
+0
+360
+183
+2
+63
+388
+253
+88
+330
+342
+123
+88
+385
+1
+2
+248
+80
+2
+0
+6
+0
+0
+92
+0
+
+
+5sosinto
+Tweet = 5sosinto
+mini =  1439400833
+maxi =  1439536192
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+5
+3
+0
+0
+0
+0
+0
+0
+0
+0
+4
+0
+0
+3
+0
+0
+0
+0
+0
+1
+332
+806
+184
+883
+349
+0
+23
+97
+0
+
+
+watchshawnaccesslive
+Tweet = watchshawnaccesslive
+mini =  1439486424
+maxi =  1439527746
+1745
+274
+45
+85
+6
+1
+4
+5
+0
+0
+1
+1
+0
+
+
+followfriday
+Tweet = followfriday
+mini =  1439441699
+maxi =  1439552713
+1
+0
+0
+1
+0
+0
+0
+0
+0
+3
+1
+0
+0
+0
+1
+2
+1
+4
+1
+17
+130
+8
+16
+5
+35
+87
+482
+254
+121
+204
+95
+0
+
+
+retweet
+Tweet = retweet
+mini =  1439400606
+maxi =  1439552713
+13
+0
+0
+0
+0
+0
+0
+0
+10
+0
+29
+43
+42
+38
+41
+43
+34
+0
+0
+13
+43
+46
+44
+40
+34
+42
+43
+46
+43
+46
+40
+45
+37
+41
+39
+42
+39
+41
+43
+42
+29
+42
+13
+0
+
+
+aldubhihintayinkita
+Tweet = aldubhihintayinkita
+mini =  1439474174
+maxi =  1439552588
+51
+26
+44
+46
+16
+6
+7
+21
+48
+55
+75
+84
+90
+106
+113
+105
+86
+57
+43
+43
+34
+30
+0
+
+
+ff
+Tweet = ff
+mini =  1439401226
+maxi =  1439552619
+1
+0
+0
+0
+0
+0
+0
+0
+2
+0
+1
+2
+0
+2
+1
+3
+0
+0
+1
+1
+2
+2
+3
+7
+3
+8
+8
+5
+5
+122
+44
+5
+13
+22
+39
+44
+59
+104
+141
+177
+172
+139
+7
+0
+
+
+topnewfollowers
+Tweet = topnewfollowers
+mini =  1439400522
+maxi =  1439551306
+42
+0
+0
+0
+0
+0
+0
+0
+12
+0
+28
+31
+19
+65
+20
+44
+4
+0
+2
+78
+48
+42
+22
+39
+50
+24
+45
+38
+47
+18
+75
+27
+20
+21
+30
+13
+27
+42
+23
+17
+25
+14
+0
+
+
+otwolthemeetup
+Tweet = otwolthemeetup
+mini =  1439504810
+maxi =  1439552699
+41
+84
+28
+60
+38
+144
+91
+139
+41
+83
+97
+87
+74
+31
+0
+
+
+camforwebstar
+Tweet = camforwebstar
+mini =  1439431217
+maxi =  1439540784
+106
+24
+2
+8
+190
+6
+5
+3
+0
+0
+1
+0
+2
+201
+38
+0
+202
+63
+4
+2
+5
+29
+8
+30
+14
+8
+10
+0
+2
+4
+2
+0
+
+
+lefthandersday
+Tweet = lefthandersday
+mini =  1439431202
+maxi =  1439552064
+1
+0
+2
+6
+6
+9
+17
+27
+7
+5
+11
+83
+94
+105
+97
+85
+59
+51
+57
+54
+35
+23
+8
+17
+14
+15
+10
+8
+16
+4
+4
+6
+6
+5
+0
+
+
+happyaldubday
+Tweet = happyaldubday
+mini =  1439400714
+maxi =  1439533883
+5
+0
+0
+0
+0
+0
+0
+0
+44
+7
+149
+187
+171
+108
+68
+73
+50
+0
+4
+31
+21
+11
+3
+3
+2
+0
+1
+0
+0
+1
+0
+0
+0
+1
+0
+1
+1
+0
+
+
+psypanliligaw
+Tweet = psypanliligaw
+mini =  1439489012
+maxi =  1439552591
+25
+23
+25
+30
+23
+46
+55
+71
+61
+102
+58
+51
+58
+37
+54
+74
+82
+64
+0
+
+
+otwolpusongofw
+Tweet = otwolpusongofw
+mini =  1439431253
+maxi =  1439549358
+29
+49
+56
+43
+25
+39
+43
+40
+12
+6
+50
+231
+128
+72
+18
+3
+2
+1
+2
+0
+3
+2
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+
+
+soundsgoodfeelsgood
+Tweet = soundsgoodfeelsgood
+mini =  1439431326
+maxi =  1439552439
+30
+13
+15
+8
+4
+9
+21
+23
+4
+1
+7
+25
+60
+22
+14
+7
+18
+16
+9
+6
+24
+41
+77
+44
+21
+65
+60
+33
+19
+24
+27
+23
+29
+4
+0
+
+
+jangharyojana
+Tweet = jangharyojana
+mini =  1439445123
+maxi =  1439548271
+246
+61
+130
+60
+71
+0
+5
+87
+66
+0
+2
+0
+0
+2
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1
+3
+2
+1
+0
+1
+0
+
+
+tbt
+Tweet = tbt
+mini =  1439400958
+maxi =  1439551551
+1
+0
+0
+0
+0
+0
+0
+0
+1
+0
+3
+11
+9
+20
+12
+13
+18
+0
+3
+32
+54
+54
+58
+57
+51
+46
+46
+30
+35
+24
+30
+19
+16
+17
+11
+11
+9
+0
+3
+3
+2
+1
+0
+
+
+contest
+Tweet = contest
+mini =  1439436791
+maxi =  1439552449
+6
+25
+92
+31
+37
+64
+32
+0
+2
+35
+14
+5
+0
+0
+3
+4
+1
+0
+0
+1
+0
+0
+0
+2
+3
+31
+47
+21
+10
+95
+31
+72
+2
+0
+
+
+flyaway
+Tweet = flyaway
+mini =  1439441734
+maxi =  1439552129
+2
+0
+1
+6
+42
+22
+3
+6
+34
+103
+47
+43
+18
+29
+17
+10
+10
+17
+22
+27
+13
+14
+19
+26
+20
+11
+27
+8
+21
+20
+9
+0
+
+
+braindots
+Tweet = braindots
+mini =  1439400802
+maxi =  1439552605
+3
+0
+0
+0
+0
+0
+0
+0
+5
+0
+20
+22
+22
+21
+15
+14
+8
+0
+0
+20
+28
+21
+34
+29
+19
+27
+25
+21
+16
+17
+20
+19
+22
+22
+17
+12
+15
+21
+13
+13
+21
+19
+5
+0
+
+
+jimin
+Tweet = jimin
+mini =  1439451301
+maxi =  1439551367
+43
+0
+123
+0
+0
+1
+0
+1
+33
+52
+55
+63
+97
+20
+0
+0
+0
+0
+0
+0
+0
+2
+0
+0
+30
+0
+50
+15
+0
+
+
+bb17
+Tweet = bb17
+mini =  1439431359
+maxi =  1439550527
+4
+12
+8
+4
+2
+1
+2
+0
+0
+0
+0
+0
+6
+3
+2
+5
+4
+6
+8
+10
+9
+8
+27
+305
+42
+18
+25
+30
+17
+9
+3
+4
+5
+1
+0
+
+
+psytulay
+Tweet = psytulay
+mini =  1439399180
+maxi =  1439547793
+4
+0
+0
+0
+0
+0
+0
+0
+4
+16
+22
+19
+23
+25
+40
+36
+61
+14
+1
+46
+110
+64
+33
+18
+1
+2
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+
+
+sharethelove
+Tweet = sharethelove
+mini =  1439400497
+maxi =  1439552673
+66
+0
+0
+0
+0
+0
+0
+0
+3
+0
+10
+12
+6
+30
+4
+8
+0
+0
+0
+40
+26
+14
+20
+13
+17
+5
+3
+26
+13
+10
+101
+8
+11
+7
+13
+7
+16
+18
+4
+3
+3
+13
+3
+0
+
+

@@ -1,173 +1,256 @@
 import json
-import pandas as pd
-import matplotlib.pyplot as plt
+import datetime
 import collections
-import nltk
-from nltk.tokenize import RegexpTokenizer
-from stop_words import get_stop_words
-from nltk.stem.porter import PorterStemmer
-from gensim import corpora, models
-import gensim
-import re
-import operator
-
-
-def get_only_required(data):
-	new = []
-	k1=u'text'
-	#k2=u'retweeted'
-	#k3=u'timestamp_ms'
-	#k4=u'entities'
-	#k5=u'retweet_count'
-	k6=u'created_at'
-	total_cnt = 0
-	correct_cnt =0
-	wrong_cnt = 0
-	for i in xrange(0,len(data)):
-		try:
-			dic = collections.OrderedDict()
-			dic[k1] = str(data[i][k1])
-			dic[k2] = str(data[i][k2])
-			dic[k3] = str(data[i][k3])
-			dic[k4] = str(data[i][k4])
-			dic[k5] = str(data[i][k5])
-			dic[k6] = str(data[i][k6])
-			new.append(dic)
-			correct_cnt = correct_cnt + 1
-		except:
-			wrong_cnt = wrong_cnt + 1
-		total_cnt = total_cnt + 1
-	
-	print
-	print "Details After Extracing Required Features\n"
-	print "Total Tweets = ",total_cnt
-	print "Correctly Extracted = ",correct_cnt
-	print "Wrong Extracted = ",wrong_cnt
-	print
-	print
-	
-	return new
+import matplotlib.pyplot as plt
 
 
 
-def get_only_text(data):
-	new=[]
-	k1="text"
-	for i in data:
-		new.append(i[k1].lower())
-	return new
 
-def lda(data):
-	data = get_only_text(data)
-	only_tweet = data
-	length = len(only_tweet)
-	length = min(20,length)
-	for i in xrange(0,length):
-		print i
-		print only_tweet[i]
-	return
-	
-	tokenizer = RegexpTokenizer(r'\w+')
-	en_stop = get_stop_words('en')
-	p_stemmer = PorterStemmer()
+def print_details(func, total_cnt, correct_cnt, wrong_cnt):
+    print "Details " + func
+    print "Total Tweets = ", total_cnt
+    print "Correctly Extracted = ", correct_cnt
+    print "Wrong Extracted = ", wrong_cnt
+    print
+    return
 
-	length = len(only_tweet)
-	length = min(20,length)
-	total_texts = []
-	for i in xrange(0,length):
-		print only_tweet[i]
-		print 
-		to_lower = only_tweet[i].lower()
-		tokens = tokenizer.tokenize(to_lower)
-		stopped_tokens = [k for k in tokens if not k in en_stop]
-		texts = [p_stemmer.stem(k) for k in stopped_tokens]
-		total_texts.append(texts)
 
-	dictionary = corpora.Dictionary(total_texts)
-	corpus = [dictionary.doc2bow(text) for text in total_texts]
+def extract_tweets_fromfile(filename):
+    new = []
+    fileopen = open(filename, "r")
+    total_cnt = 0
+    correct_cnt = 0
+    wrong_cnt = 0
 
-	ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=2, id2word = dictionary, passes=20)
-	result =  ldamodel.print_topics(num_topics=2, num_words=1)
-	for i in result:
-		print i
+    for line in fileopen:
+        try:
+            tweet = json.loads(line.strip("\n"))
+            new.append(tweet)
+            correct_cnt = correct_cnt + 1
+        except Exception, exception:
+            #print str(exception)
+            wrong_cnt = wrong_cnt + 1
+        total_cnt = total_cnt + 1
+
+    print_details("After Extracting Tweets", total_cnt, correct_cnt, wrong_cnt)
+    return new
+
+
+def extract_features_from_tweet(data):
+    new = []
+    k1 = u'text'
+    #k6 = u'created_at'
+    k6 = "createdAt"
+    total_cnt = 0
+    correct_cnt = 0
+    wrong_cnt = 0
+    length = len(data)
+    length = min(100000, length)
+    for i in xrange(0, length):
+        try:
+            dic = collections.OrderedDict()
+            dic[k1] = str(data[i][k1])
+            time = datetime.datetime.strptime(((data[i][k6])), "%b %d, %Y %I:%M:%S %p")
+            dic[k6] = (int(time.strftime("%s"))/1)
+            new.append(dic)
+            correct_cnt = correct_cnt + 1
+        except Exception, exception:
+            #print str(exception)
+            #print data[i][k6]
+            #print
+            wrong_cnt = wrong_cnt + 1
+        total_cnt = total_cnt + 1
+
+    print_details("After Extracting Features", total_cnt, correct_cnt, wrong_cnt)
+    return new
 
 
 def get_hashtags(data):
-	hashtags = []
-	tempdata = get_only_text(data)
-	num_of_tweets = len(tempdata)
-	for i in xrange(0,num_of_tweets):
-		if "#" in tempdata[i]:
-			splited = tempdata[i].split()
-			new_length  = len(splited)
-			temp = []
-			for j in xrange(0,new_length):
-				if "#"  in splited[j]:
-					temp.append(splited[j])
-			hashtags.append(temp)
-	return hashtags
+    hashtags = []
+    k1 = u'text'
+    #k6 = u'created_at'
+    k6 = "createdAt"
+    k7 = "tweet"
+    k8 = "time"
+    num_of_tweets = len(data)
+    for i in xrange(0, num_of_tweets):
+        if "#" in data[i][k1]:
+            splited = data[i][k1].split()
+            new_length = len(splited)
+            temp = []
+            for j in xrange(0, new_length):
+                if "#"  in splited[j]:
+                    det = {}
+                    temp_word = ''.join(letter for letter in splited[j] if letter.isalnum())
+                    if temp_word != '':
+                        det[k7] = temp_word.lower()
+                        det[k8] = data[i][k6]
+                        hashtags.append(det)
+    return hashtags
 
-def print_hashtags(hashtags):
-	for i in xrange(0,len(hashtags)):
-		print hashtags[i]
-	return
+
 
 def count_hashtags(hashtags):
-	dic_hashtags_count = {}
-	num_of_tweets = len(hashtags)
-	for i in xrange(0,num_of_tweets):
-		for j in xrange(0,len(hashtags[i])):
-			word = hashtags[i][j][1:]
-			temp_word = ''.join(letter for letter in word if letter.isalnum())
-			try:
-				dic_hashtags_count[temp_word] = dic_hashtags_count[temp_word] + 1
-			except:
-				dic_hashtags_count[temp_word] = 1
-	return dic_hashtags_count
+    dic_hashtags_count = {}
+    dic_time_count = {}
+    length = len(hashtags)
+    k7 = "tweet"
+    k8 = "time"
+    for i in xrange(0, length):
+        word = hashtags[i][k7]
+        time = hashtags[i][k8]
+        try:
+            dic_hashtags_count[word].append(time)
+        except Exception, exception:
+            #print str(e)
+            dic_hashtags_count[word] = []
+            dic_hashtags_count[word].append(time)
+
+
+        try:
+            dic_time_count[time].append(word)
+        except Exception, exception:
+            #print str(e)
+            dic_time_count[time] = []
+            dic_time_count[time].append(word)
+    return dic_hashtags_count, dic_time_count
+
 
 def print_hastags_count(dic):
-	sorted_dic=sorted(dic.items(), key=lambda x: -x[1])
-	#sorted_dic = sorted(dic.items(), key=operator.itemgetter(1))
-	for i in sorted_dic:
-		print i[0] + " " , i[1]
-	return
+    sorted_dic = sorted(dic.items(), key=lambda x: -len(x[1]))
+    for i in sorted_dic:
+        print i[0] + " ", i[1]
+    return
+
+
+def get_timewise_hashtags(data):
+    start = min(data.keys())
+    end = max(data.keys())
+    print "start = ", start
+    print "end   = ", end
+    #print sorted(data.keys())
+    s = start
+    e = s + 3600
+    while 1:
+        dic = {}
+        print
+        for i in xrange(s, e+1):
+            try:
+                for j in xrange(0, len(data[i])):
+                    try:
+                        dic[data[i][j]] = dic[data[i][j]] + 1
+                    except Exception, exception:
+                        dic[data[i][j]] = 1
+            except Exception, exception:
+                z = 1
+        sorted_dic = sorted(dic.items(), key=lambda x: -(x[1]))
+        #print sorted_dic
+        length = min(10, len(sorted_dic))
+        print s, " ", e
+        for n in xrange(0, length):
+            print sorted_dic[n][0] + " ", sorted_dic[n][1]
+        print
+        s = e + 1
+        e = s + 3600
+        if s >= end:
+            break
+    return
+
+
+def print_result(tweet, mini, maxi, result, interval):
+    print "Tweet = " + tweet
+    print "mini = ", mini
+    print "maxi = ", maxi
+    for i in xrange(0, len(result)):
+        print result[i]
+    print
+    print
+    result.insert(0, 0)
+    result.insert(0, 0)
+    result.insert(0, 0)
+    result.insert(0, 0)
+    result.append(0)
+    result.append(0)
+    result.append(0)
+    result.append(0)
+    result.append(0)
+    #plt.xticks(range(len(dic)), dic.keys())
+    start=mini
+    #for i in xrange(0, len(result)):
+    #    c = datetime.datetime.fromtimestamp(start)
+    #    result.append(c.hour)
+    
+    c = datetime.datetime.fromtimestamp(start)
+    hr = c.hour
+    xlab=[]
+    xlab.insert(0,(hr-1+24)%24)
+    xlab.insert(0,(hr-2+24)%24)
+    xlab.insert(0,(hr-3+24)%24)
+    xlab.insert(0,(hr-4+24)%24)
+    for i in xrange(0, len(result)):
+        xlab.append(hr)
+        hr = (hr+1) % 24
+
+
+
+    plt.plot(result)
+    plt.ylabel('Frequency')
+    plt.xlabel('Time ' + str(c.date()))
+    plt.ylim(-2, max(result))
+    plt.xlim(-2, len(result))
+    plt.xticks(range(len(xlab)), xlab)
+    plt.savefig(tweet + ".png")
+    plt.clf()
+
+    return
+
+
+def get_wordwise_hastags(data):
+    sorted_dic = sorted(data.items(), key=lambda x: -len(x[1]))
+    length = len(sorted_dic)
+    length = min(5, length)
+    print
+    for i in xrange(0, length):
+        print sorted_dic[i][0]
+        mini = min(sorted_dic[i][1])
+        maxi = max(sorted_dic[i][1])
+        result = []
+        st = mini
+        interval = 3600
+        while 1:
+            cnt = 0
+            for k in xrange(0, interval):
+                try:
+                    cnt = cnt + sorted_dic[i][1].count(st+k)
+                except Exception, exception:
+                    print str(exception)
+                    z = 1
+            result.append(cnt)
+            if st >= maxi:
+                break
+            st = st + interval
+        print_result(sorted_dic[i][0], mini, maxi, result, interval)
+    return
+
+
+
 
 def main(filename):
-	data = []
-	fileopen = open(filename, "r")
-	total_cnt = 0
-	correct_cnt=0
-	wrong_cnt = 0
-
-	for line in fileopen:
-		try:
-			tweet = json.loads(line.strip("\n"))
-			data.append(tweet)
-			correct_cnt = correct_cnt + 1
-		except:
-			wrong_cnt = wrong_cnt + 1
-		total_cnt = total_cnt + 1
-
-	print
-	print "Details After Json Loads\n"
-	print "Total Tweets = ",total_cnt
-	print "Correctly Jsonified = ",correct_cnt
-	print "Wrong Jsonified = ",wrong_cnt
-	print
-	print
-	data = get_only_required(data)
-	hashtags = get_hashtags(data)
-	counted = count_hashtags(hashtags)
-	print_hastags_count(counted)
-	
-	#lda(data)
+    data = extract_tweets_fromfile(filename)
+    data = extract_features_from_tweet(data)
+    hashtags = get_hashtags(data)
+    word_counted, time_counted = count_hashtags(hashtags)
+    #print_hastags_count(word_counted)
+    get_timewise_hashtags(time_counted)
+    get_wordwise_hastags(word_counted)
+    return
 
 
 
 
 if __name__ == '__main__':
-	file_name = './pythondata.txt'
-	main(file_name)
+    file_name = './tofind1.txt'
+    main(file_name)
 
 
 
