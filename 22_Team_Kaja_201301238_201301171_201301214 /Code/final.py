@@ -2,6 +2,7 @@ import json
 import datetime
 import collections
 import matplotlib.pyplot as plt
+import time
 
 
 
@@ -45,7 +46,7 @@ def extract_features_from_tweet(data):
     correct_cnt = 0
     wrong_cnt = 0
     length = len(data)
-    length = min(100000, length)
+    length = min(1000000, length)
     for i in xrange(0, length):
         try:
             dic = collections.OrderedDict()
@@ -146,7 +147,9 @@ def get_timewise_hashtags(data):
         sorted_dic = sorted(dic.items(), key=lambda x: -(x[1]))
         #print sorted_dic
         length = min(10, len(sorted_dic))
-        print s, " ", e
+        stt = datetime.datetime.fromtimestamp(s).strftime('%b %d, %Y %I:%M:%S %p')
+        edd = datetime.datetime.fromtimestamp(e).strftime('%b %d, %Y %I:%M:%S %p')
+        print stt, " ", edd
         for n in xrange(0, length):
             print sorted_dic[n][0] + " ", sorted_dic[n][1]
         print
@@ -208,7 +211,7 @@ def print_result(tweet, mini, maxi, result, interval):
 def get_wordwise_hastags(data):
     sorted_dic = sorted(data.items(), key=lambda x: -len(x[1]))
     length = len(sorted_dic)
-    length = min(5, length)
+    length = min(25, length)
     print
     for i in xrange(0, length):
         print sorted_dic[i][0]
@@ -249,7 +252,7 @@ def main(filename):
 
 
 if __name__ == '__main__':
-    file_name = './tofind1.txt'
+    file_name = './tofind.txt'
     main(file_name)
 
 
